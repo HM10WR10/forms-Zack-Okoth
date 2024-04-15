@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-15">
+        <title>New student Registration <Form:post></Form:post></title>
+        <style>
+            body{
+                background-color:color-mix(in xyz-d50, color percentage, color percentage);
+                margin:0;
+                padding:20px
+            }
+            .green-square-button {
+                                width: 7cm;
+                                height: 2cm;
+                                background-color: green;
+                                color: white;
+                                border: none;
+                                font-size: 16px; /* Adjust font size as needed */
+            }
+
+/* Hover effect for button */
+           .green-square-button:hover {
+                                      background-color: darkgreen;
+                                      cursor: pointer;
+            }
+            .red-square-button {
+                               width: 5cm;
+                               height: 2cm;
+                               background-color: red;
+                               color: white;
+                               border: none;
+                               font-size: 16px; /* Adjust font size as needed */
+            }
+
+           .red-square-button:hover {
+                                    background-color: darkred;
+                                    cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="" style="max-width:100%;"alt="Picture of students who are graduating">
+        <p><strong>WELCOME TO THE NEW STUDENT REGISTARTION WEBSITE.</strong></p><br>
+        <p><strong>The student is required to fill all fields within the form. Double check for any errors befpore submiting your form.</strong></p><br>
+        <form>
+            <fieldset>
+                <legend>Personal details</legend>
+                <fieldset>
+                        <input type="text" id="firstname" name="name" placeholder="Enter your First name" required title="Please enter your First name">
+                        <label for="firstname">First name:</label><br>
+
+                        <input type="text" id="secondname"name="secondname" placeholder="Enter your Second name" required title="please enter your second name">
+                        <label for="secondname">Second name:</label><br>
+                </fieldset>
+
+                <input type="date" id="dob" name="dob" required title="Please provide a valid Date of Birth">
+                <label for="dob">Date of Birth:</label><br>
+
+                <input type="text" id="address" name="address" placeholder="Enter your address" required title="Please enter your address">
+                <label for="address">Address:</label><br>
+
+                <input type="tel" id="phone" name="phone" placeholder="123-456-789-0" required title="please enter your phone number">
+                <label for="phone">Phone Number:</label><br>
+
+                <fieldset>
+                    <legend>Gender</legend><br>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label><br>
+    
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label><br>
+                </fieldset>
+            </fieldset>
+
+            <fieldset>
+                <legend>Other details</legend><br>
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" placeholder="Enter your email" required title="Please enter your email"><br>
+
+                <label for="Course">Course:</label>
+                <input type="text" id="Course" name="Course" placeholder="Enter your name" required title="Please enter your course"><br>
+            </fieldset>
+        
+            <button type="submit" class="green-square-button">Register</button><br>
+            <br>
+            <button type="button" class="red-square-button">Cancel registration</button>
+        </form>
+    </body>
+</html>
